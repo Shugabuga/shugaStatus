@@ -1,0 +1,109 @@
+body {
+    background: #e9ecef;
+}
+.container {
+    padding-top: 20px;
+}
+.jumbotron {
+    background: #d8dbde;
+}
+.category {
+    margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+h2 {
+    font-size: 32px;
+}
+hr {
+    border: 1px solid #d8dbde;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+.entry {
+    border: 2px solid #d8dbde;
+    border-radius: 7px;
+    padding: 20px;
+}
+.online {
+    color: #1ea81f;
+}
+.right {
+    text-align: right;
+    float: right
+}
+.text-online {
+    color: #1ea81f;
+}
+.text-down {
+    color: #a8271e;
+}
+.text-intermittent {
+    color: #a8771e;
+}
+.text-unknown {
+    color: #d8dbde;
+}
+.bg-online {
+    background: #1ea81f;
+}
+.bg-down {
+    background: #a8271e;
+}
+.bg-intermittent {
+    background: #a8771e;
+}
+.bg-unknown {
+    background: #d8dbde;
+}
+.progress-out {
+    border-radius: 5px;
+    background-color: #d8dbde;
+    width: 100%;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+}
+.progress-in {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #1ea81f;
+}
+.progress-master {
+    background: #1e5aa8;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+}
+.progress-underlay {
+    color: #1e5aa8;
+    margin-bottom: -24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 0;
+}
+a.hide-link {
+    text-decoration: none;
+    color: black;
+}
+a.hide-link:hover {
+    text-decoration: none;
+    color: #777;
+}
+.news {
+    padding: 10px;
+}
+.news-empty {
+    color: #b6b9bc;
+}
+.entry > .monitor:last-child > hr {
+    display: none;
+}
+.footer {
+    margin-bottom: 30px;
+}

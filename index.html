@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>shugaStatus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.png">
+    <meta name="Description" content="Check the uptime of servers operated by Shuga Holdings and affiliates.">
+    <meta property="og:image" content="banner.png">
+    <meta property="og:title" content="shugaStatus">
+    <meta name="theme-color" content="#222222">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HeyItsShuga">
+    <meta name="twitter:creator" content="@HeyItsShuga">
+    <meta name="twitter:title" content="shugaStatus">
+    <meta name="twitter:description" content="Check the uptime of servers operated by Shuga Holdings and affiliates.">
+    <meta name="twitter:image" content="https://status.shuga.co/banner.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="shugaStatus">
+    <link rel="apple-touch-icon-precomposed" href="icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="icon.png">
+    <meta name="msapplication-TileColor" content="#222222">
+    <link rel="shortcut-icon" href="favicon.png">
+</head>
+<body>
+    <div class="container main">
+
+        <div class="jumbotron">
+          <h1 class="display-4">shugaStatus <span style="font-size: 20px" class="badge badge-secondary"><!-- Badge text for version --></span></h1>
+          <p class="lead">Check the uptime of servers operated by Shuga Holdings and affiliates.</p>
+        </div>
+        
+        <div class="alert alert-success" id="tldr">
+          All services are operational!
+        </div>
+
+        <div class="container news">
+        <h1>News</h1>
+            <div class="entry">
+                <div class="news news-empty">
+                    There is no news to display!
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container footer">
+        <div class="progress-out">
+            <div class="progress-underlay">Refreshing in 5:00</div>
+            <div class="progress-in progress-master" timer="300">Refreshing in 5:00</div>
+        </div>
+    </div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" async></script>
+<script type="text/javascript" src="index.js" async></script>
+</html>
