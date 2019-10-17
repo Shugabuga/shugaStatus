@@ -15,7 +15,7 @@ function shugaStatus() {
                 let status;
                 let link;
 
-                if(obj.status == 2) {
+                if (obj.status == 2) {
                     status = "Online";
                 } else if(obj.status == 9) {
                     status = "Down";
@@ -146,6 +146,7 @@ function shugaStatus() {
     }
     this.progress = () => {
         const el = document.querySelector(".progress-master");
+        const elt = document.querySelector(".progress-text");
         value = Number(el.getAttribute("timer"));
         value--;
         if (value <= 0) {
@@ -157,9 +158,9 @@ function shugaStatus() {
         if (seconds < 10) {
             seconds = "0" + String(seconds);
         }
-        el.innerHTML = "Refreshing in " + Math.floor(value/60) + ":" + seconds;
-        document.querySelector(".progress-underlay").innerHTML = "Refreshing in " + Math.floor(value/60) + ":" + seconds;
         el.style.width = value/3 + "%";
+        elt.innerHTML = "Refreshing in " + Math.floor(value/60) + ":" + seconds;
+        document.querySelector(".progress-underlay").innerHTML = "Refreshing in " + Math.floor(value/60) + ":" + seconds;
     }
 }
 
